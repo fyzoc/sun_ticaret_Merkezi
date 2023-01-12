@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -107,23 +108,26 @@ public class UIStepDefinitions {
         homePage.official_name_surname.sendKeys(official_name_surname);
     }
     @When("user enters yetkili_e_posta {string}")
-    public void userEntersYetkili_e_posta(String official_email) {
+    public void userEntersYetkili_e_posta(String official_email) throws InterruptedException {
         homePage.official_email.sendKeys(official_email);
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        Thread.sleep(1000);
     }
     @When("user enters yetkili_gsm {string}")
-    public void userEntersYetkili_gsm(String official_phone) {
+    public void userEntersYetkili_gsm(String official_phone) throws InterruptedException {
         homePage.official_phone.sendKeys(official_phone);
-
+        //actions.sendKeys(Keys.PAGE_DOWN).perform();
     }
     @And("user click on agreement")
     public void userClickOnAgreement() throws InterruptedException {
-        Thread.sleep(2000);
         homePage.agreement.click();
     }
     @And("user click on enrol button")
     public void userClickOnEnrolButton() throws InterruptedException {
         Thread.sleep(1000);
-        homePage.enrol.click();
+        ReusableMethods.clickWithJS(homePage.enrol);
+        Thread.sleep(5000);
     }
     @And("user close browser")
     public void userCloseBrowser() {
