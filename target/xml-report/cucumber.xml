@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.226">
-    <testcase classname="TestPage" name="Test_the_page" time="13.987">
-        <failure message="element click intercepted: Element &lt;input type=&quot;submit&quot; name=&quot;ctl00$ContentPlaceHolder1$btnKurumsalUyeKaydet&quot; value=&quot;Kaydet&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$ContentPlaceHolder1$btnKurumsalUyeKaydet&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;ContentPlaceHolder1_btnKurumsalUyeKaydet&quot; class=&quot;theme-btn btn-one&quot;&gt; is not clickable at point (354, 677). Other element would receive the click: &lt;a aria-label=&quot;learn more about cookies&quot; role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cc-link&quot; href=&quot;/agreement/cerez-politikasi&quot; target=&quot;_blank&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=108.0.5359.125)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'LAPTOP-04TQQJUH', ip: '192.168.2.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [27fd4011f240bd519f803cbde513a9ed, clickElement {id=a721ac6f-45e3-443c-b236-02c8fce19c48}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62877/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (27fd4011f240bd519f803cbde513a9ed)] -&gt; id: ContentPlaceHolder1_btnKurumsalUyeKaydet]&#10;Session ID: 27fd4011f240bd519f803cbde513a9ed" type="org.openqa.selenium.ElementClickInterceptedException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.823">
+    <testcase classname="TestPage" name="Test_the_page" time="20.37">
+        <system-out>
             <![CDATA[Given user is on homePage...................................................passed
 When user click on UyePanel i button........................................passed
 And user click on Yeni Uyelik...............................................passed
@@ -10,41 +10,22 @@ Given user select official institution......................................pass
 And user select any country.................................................passed
 And user select producer....................................................passed
 And user select any city....................................................passed
-When user enters "AbgroupAbgroupAbgroupAbgroup","TR1234000000200012233412","www.abgroup.com","abgroup@gmail.com","kartal mah. cevizli sok numara 18","Kartal","1234567890","5071246567","5346768768","Musa Yıldız","abberk123@gmail.com","5379789789".passed
-And user click on enrol button..............................................failed
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="ctl00$ContentPlaceHolder1$btnKurumsalUyeKaydet" value="Kaydet" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btnKurumsalUyeKaydet&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btnKurumsalUyeKaydet" class="theme-btn btn-one"> is not clickable at point (354, 677). Other element would receive the click: <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="/agreement/cerez-politikasi" target="_blank">...</a>
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'LAPTOP-04TQQJUH', ip: '192.168.2.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27fd4011f240bd519f803cbde513a9ed, clickElement {id=a721ac6f-45e3-443c-b236-02c8fce19c48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62877/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (27fd4011f240bd519f803cbde513a9ed)] -> id: ContentPlaceHolder1_btnKurumsalUyeKaydet]
-Session ID: 27fd4011f240bd519f803cbde513a9ed
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at stepdefinitions.UIStepDefinitions.userClickOnEnrolButton(UIStepDefinitions.java:112)
-	at ✽.user click on enrol button(file:///C:/Users/HP/IdeaProjects/sun_ticaret_merkezi/./src/test/resources/features/firstfeaturefile.feature:16)
+When user enters sirket_unvani "AbgroupAbgroupAbgroupAbgroup"...............passed
+When user enters kurumsal_iban "TR1234000000200012233412"...................passed
+When user enters kurumsal_web_sitesi"www.abgroup.com".......................passed
+When user enters kurumsal_e_posta "abgroup@gmail.com".......................passed
+When user enters sirket_adresi "kartal mah. cevizli sok numara 18"..........passed
+When user enters vergi_dairesi "Kartal".....................................passed
+When user enters vergi_numarasi "1234567890"................................passed
+When user enters sabit_telefon "507-126-4567"...............................passed
+When user enters mobil_telefon "5346768768".................................passed
+When user enters yetkili_ad_soyad "Musa Yıldız".............................passed
+When user enters yetkili_e_posta "abberk123@gmail.com"......................passed
+When user enters yetkili_gsm "5379789789"...................................passed
+And user click on agreement.................................................passed
+And user click on enrol button..............................................passed
+And user close browser......................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
