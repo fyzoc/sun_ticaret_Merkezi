@@ -30,7 +30,7 @@ Feature: TestPage
      And user close browser
     Examples:
       | company_name                 | company_iban             | company_website | company_email     | company_adress                    | tax_box | tax_number | land_phone   | mobile_phone | official_name_surname | official_email      | official_phone |
-      | AbgroupAbgroupAbgroupAbgroup | TR1234000000200012233412 | www.abgroup.com | abgroup@gmail.com | kartal mah. cevizli sok numara 18 | Kartal  | 1234567890 | 507-126-4567 | 5346768768   | Musa Yıldız           | abberk123@gmail.com | 5379789789     |
+      | AbgroupAbgroupAbgroupAbgroup | TR1234000000200012233412 | www.abgroup.com | abgroup@gmail.com | kartal mah. cevizli sok numara 18 | Kartal  | 1234567890 | 507-126-4567 | (507)-023-4567   | Musa Yıldız           | abberk123@gmail.com | 5379789789     |
 
 
 
